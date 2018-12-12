@@ -1,0 +1,12 @@
+
+@import './Rem.scss';
+html,body{height: 100%;}
+#root{height: 100%;}
+.container{
+    height: 100%;
+    display: flex;flex-direction: column;
+    .content{flex: 1;overflow-y: auto;}
+    .am-tab-bar{
+        height:h(50);background: #fff;
+    }
+}
