@@ -232,11 +232,25 @@
                 .list-item{
                   display: flex;
                   flex-wrap:wrap-reverse;
+                  justify-content: space-around;
+                  padding-left: w(5);
+                  padding-right: w(5);
                     .list-map{
-                        img{
-                            width: w(168);
-                            height: h(168);
+                        width: 48%;
+                        height: h(265);
+                        margin-bottom: w(10);
+                        border: #eee h(1) solid;
+                        a{
+                            color: #999;
+                            width: 96%;
+                            display: block;
+                            margin: 0 auto;
+                            img{
+                                width: 100%;
+                                height: h(168);
+                            }
                         }
+                       
                     }
                 }
             }

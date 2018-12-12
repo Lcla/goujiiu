@@ -365,17 +365,18 @@ class Home extends Component{
                 <Tabs tabs={this.state.tabs}
                 
                 >
-                            <div className="list-item">
-                       
-                            {this.state.aa.map((item,index)=>{
-                            return(
-                                <div key={index} className="list-map">
-                                     <a href="#">
-                                            <img src={`http://img0.gjw.com/product/${item.Pic}`}/>
-                                        </a>
-                                </div>
-                            )
-                         })}
+                    <div className="list-item">
+                
+                    {this.state.aa.map((item,index)=>{
+                    return(
+                        <div key={index} className="list-map">
+                                <a href="#">
+                                    <img src={`http://img0.gjw.com/product/${item.Pic}`}/>
+                                    <i>{item.activityTitle.Ativityname  ? item.activityTitle.Ativityname : ''}</i>
+                                </a>
+                        </div>
+                    )
+                    })}
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '250px', backgroundColor: '#fff' }}>
                     2
